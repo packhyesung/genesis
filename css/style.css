@@ -1,0 +1,119 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+#wrap {width: 100%;height: 100%;}
+#wrap #header {width: 100%;}
+
+#wrap #main {width: 100%;height: 100%;}
+
+/* 공통스타일 */
+#wrap #main .section {width: 100%;}
+#wrap #main .section .container {width: 100%;}
+#wrap #main .section .container .content {width: 100%;}
+
+/* 섹션1 */
+#wrap #main #section1 {height: 100%;}
+#wrap #main #section1 .container {height: 100%;}
+#wrap #main #section1 .container .content {height: 100%;position: relative;user-select: none;}
+#wrap #main #section1 .container .content .slide-container {width: 100%;overflow: hidden;height: 100%;z-index: 1;position: relative;cursor: grab;}
+#wrap #main #section1 .container .content .slide-container .slide-content {width: 100%;height: 100%;}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap {width: 1300%;display: flex;margin-left: -100%;height: 100%;position: relative;left:0%}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide {width: 100%;height: 100%;}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide .img-box {
+    width: 100%;
+    height: 100%;
+    background: url() no-repeat 50% 50%;
+    background-size: cover; 
+}
+/* 백그라운드 이미지 지정 */
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide01 .img-box {background-image: url(../img/1.jpg);}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide02 .img-box {background-image: url(../img/2.jpg);}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide03 .img-box {background-image: url(../img/3.jpg);}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide04 .img-box {background-image: url(../img/4.jpg);}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide05 .img-box {background-image: url(../img/5.jpg);}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide06 .img-box {background-image: url(../img/6.jpg);}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide07 .img-box {background-image: url(../img/7.jpg);}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide08 .img-box {background-image: url(../img/8.jpg);}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide09 .img-box {background-image: url(../img/9.jpg);}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide10 .img-box {background-image: url(../img/10.jpg);}
+#wrap #main #section1 .container .content .slide-container .slide-content .slide-wrap .slide11 .img-box {background-image: url(../img/11.jpg);}
+
+/* 페이지박스 */
+#wrap #main #section1 .container .content .page-btn-box {position: absolute;
+    bottom: 120px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    z-index: 2;}
+
+#wrap #main #section1 .container .content .page-btn-box .page-container {display: flex;align-items: center;}
+#wrap #main #section1 .container .content .page-btn-box .page-container span {display: flex;margin: 0 8px;}
+#wrap #main #section1 .container .content .page-btn-box .page-container span a {
+    width: 8px;
+    height: 8px;
+    border: 2px solid transparent; 
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    margin: 0 8px;
+}
+#wrap #main #section1 .container .content .page-btn-box .page-container span a.on {
+    width: 10px;
+    height: 10px;
+    border: 1.5px solid #fff;
+    background: rgba(255,255,255,0);
+    transform: scale(1.5);
+}
+
+
+
+
+
+#wrap #main #section1 .container .content .page-btn-box .page-container span button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+/* 일시정지상태 삼각모양 UI 디자인 테두리를 이용*/
+#wrap #main #section1 .container .content .page-btn-box .page-container span button.stop i {
+    display: inline-block;
+    margin: 0;
+    border: 8px solid #fff;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 8px solid transparent;
+}
+/* 플레이상태 */
+#wrap #main #section1 .container .content .page-btn-box .page-container span button.play i {
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background:transparent;
+    margin: 0 1px;
+}
+
+/* 
+플레이상태
+이전 : before
+이후 : after
+ */
+
+#wrap #main #section1 .container .content .page-btn-box .page-container span button.play i::before {
+    content: '';
+    display:inline-block;
+    width: 3px;
+    height: 12px;
+    background: #fff;
+    margin-right: 1px;
+} 
+#wrap #main #section1 .container .content .page-btn-box .page-container span button.play i::after {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 12px;
+    background: #fff;
+    margin-left: 1px;
+} 
+
+#wrap #footer {width: 100%;}
